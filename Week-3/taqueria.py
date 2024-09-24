@@ -22,5 +22,5 @@ total=0
 while True:
     try:
         main()
-    except EOFError and KeyboardInterrupt:
+    except:
         break
