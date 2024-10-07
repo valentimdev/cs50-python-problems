@@ -1,12 +1,15 @@
-saudacao = input("Greeting:")
-palavra = "hello"
+def main():
+    saudacao = input("Greeting:")
+    print(checagem(saudacao))
+    
 
 def checagem(saudacao):
+    palavra = "hello"
     if palavra in saudacao.lower():
-        print("$0")
+        return "$0"
     elif saudacao[0]=="h" or saudacao[0]=="H":
-        print("$20")
+        return "$20"
     else:
-        print("$100")
+        return "$100"
 
-checagem(saudacao)
+main()
